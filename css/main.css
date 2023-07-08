@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'April Fatface';
+    font-weight: 400 normal;
+    src: url('../ttf/AbrilFatface-Regular.ttf') format('truetype');
+  }
+
+* {
+    box-sizing: border-box;
+    font-family: 'April Fatface';
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../img/bg/bgl-detetive-card.png');
+    background-size: 100% 100%;
+    color: #f8f8f8;
+    padding: 20px;
+}
+
+.box {
+    background-color: #000000e9;
+    color: #fff;
+    display: none;
+    height: 100%;
+    right: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+.box h2 {
+    margin: auto;
+}
+
+.box::after {
+    color: white;
+    content: 'X';
+    display: block;
+    position: fixed;
+    right: 30px;
+    top: 30px
+}
+
+h1 {
+    border-bottom: 1px solid #693636;
+    font-family: 'April Fatface';
+    font-size: 40px;
+    margin: 50px 0px 30px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+h1 span {
+    float: right;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    margin-top: 11px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li.carta {
+    background-image: linear-gradient(45deg, #F2EFDF 50%, #798C8C);
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px #00000039;
+    color: #554909;
+    display: block;
+    height: auto;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0px 0px 20px;
+    padding: 0px;
+    text-transform: uppercase;
+}
+
+li.carta.mao {
+    border: 2px solid green;
+}
+
+label {
+    cursor: pointer;
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+}
+
+li.carta.checked {
+    opacity: .4;
+}
+
+li.carta.checked label {
+    text-decoration: line-through;
+}
+
+input[type="checkbox"] {
+    display: none;
+}

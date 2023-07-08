@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detetive Card</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+    <div class="box" id="carta-mostrada"></div>
+
+    <h1>Suspeitos <span class="contador" id="cont-suspeitos">6 / 6</span></h1>
+    <ul id="suspeitos">
+        <li class="carta">
+            <label id="lab-cel-mostarda" for="cel-mostarda">
+                <input type="checkbox" name="cel-mostarda" id="cel-mostarda" />
+                Coronel Mostarda
+            </label>
+        </li>
+
+        <li class="carta mao">
+            <label id="lab-prof-black" for="prof-black">
+                <input type="checkbox" name="prof-black" id="prof-black" />
+                Prof. Black
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-dona-violeta" for="dona-violeta">
+                <input type="checkbox" name="dona-violeta" id="dona-violeta" />
+                Dona Violeta
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-sr-marinho" for="sr-marinho">
+                <input type="checkbox" name="sr-marinho" id="sr-marinho" />
+                Sr. Marinho
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-srta-rosa" for="srta-rosa">
+                <input type="checkbox" name="srta-rosa" id="srta-rosa" />
+                Srta. Rosa
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-dona-branca" for="dona-branca">
+                <input type="checkbox" name="dona-branca" id="dona-branca" />
+                Dona Branca
+            </label>
+        </li>
+    </ul>
+
+    <h1>Armas <span class="contador" id="cont-armas">6 / 6</span></h1>
+    <ul id="armas">
+        <li class="carta">
+            <label id="lab-faca" for="faca">
+                <input type="checkbox" name="faca" id="faca" />
+                Faca
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-castical" for="castical">
+                <input type="checkbox" name="castical" id="castical" />
+                Castiçal
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-revolver" for="revolver">
+                <input type="checkbox" name="revolver" id="revolver" />
+                Revólver
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-corda" for="corda">
+                <input type="checkbox" name="corda" id="corda" />
+                Corda
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-cano" for="cano">
+                <input type="checkbox" name="cano" id="cano" />
+                Cano
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-chave-inglesa" for="chave-inglesa">
+                <input type="checkbox" name="chave-inglesa" id="chave-inglesa" />
+                Chave inglesa
+            </label>
+        </li>
+    </ul>
+
+    <h1>Aposentos <span class="contador" id="cont-aposentos">9 / 9</span></h1>
+    <ul id="aposentos">
+        <li class="carta">
+            <label id="lab-hall" for="hall">
+                <input type="checkbox" name="hall" id="hall" />
+                Hall
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-sala-de-estar" for="sala-de-estar">
+                <input type="checkbox" name="sala-de-estar" id="sala-de-estar" />
+                Sala de estar
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-cozinha" for="cozinha">
+                <input type="checkbox" name="cozinha" id="cozinha" />
+                Cozinha
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-sala-de-jantar" for="sala-de-jantar">
+                <input type="checkbox" name="sala-de-jantar" id="sala-de-jantar" />
+                Sala de jantar
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-salao-de-festas" for="salao-de-festas">
+                <input type="checkbox" name="salao-de-festas" id="salao-de-festas" />
+                Salão de festas
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-sala-de-musica" for="sala-de-musica">
+                <input type="checkbox" name="sala-de-musica" id="sala-de-musica" />
+                Sala de música
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-salao-de-jogos" for="salao-de-jogos">
+                <input type="checkbox" name="salao-de-jogos" id="salao-de-jogos" />
+                Salão de jogos
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-biblioteca" for="biblioteca">
+                <input type="checkbox" name="biblioteca" id="biblioteca" />
+                Biblioteca
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-escritorio" for="escritorio">
+                <input type="checkbox" name="escritorio" id="escritorio" />
+                Escritório
+            </label>
+        </li>
+    </ul>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
+
+</html>
