@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detetive Card</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+<body>
+    <div class="box" id="carta-mostrada"></div>
+
+    <h1>Suspeitos <span class="contador" id="cont-suspeitos">8 / 8</span></h1>
+    <ul id="suspeitos">
+        <li class="carta">
+            <label id="lab-bigode" for="bigode">
+                <input type="checkbox" name="bigode" id="bigode" />
+                &#128993;&nbsp;&nbsp; Bigode (sargento)
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-dona-branca" for="dona-branca">
+                <input type="checkbox" name="dona-branca" id="dona-branca" />
+                &#x26aa;&nbsp;&nbsp; Dona Branca (florista)
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-tony-gourmet" for="tony-gourmet">
+                <input type="checkbox" name="tony-gourmet" id="tony-gourmet" />
+                &#x1F7E4;&nbsp;&nbsp; Tony Gourmet (chef de cozinha)
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-james" for="james">
+                <input type="checkbox" name="james" id="james" />
+                &#x1f535;&nbsp;&nbsp; James (mordomo)
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-dona-violeta" for="dona-violeta">
+                <input type="checkbox" name="dona-violeta" id="dona-violeta" />
+                &#129655;&nbsp;&nbsp; Dona Violeta (médica)
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-srta-rosa" for="srta-rosa">
+                <input type="checkbox" name="srta-rosa" id="srta-rosa" />
+                &#x1f534;&nbsp;&nbsp; Srta. Rosa (dançarina)
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-sergio-soturno" for="sergio-soturno">
+                <input type="checkbox" name="sergio-soturno" id="sergio-soturno" />
+                &#x26ab;&nbsp;&nbsp; Sérgio Soturno (coveiro)
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-sr-marinho" for="sr-marinho">
+                <input type="checkbox" name="sr-marinho" id="sr-marinho" />
+                &#x1F7E2;&nbsp;&nbsp; Sr. Marinho (advogado)
+            </label>
+        </li>
+    </ul>
+
+    <h1>Armas <span class="contador" id="cont-armas">8 / 8</span></h1>
+    <ul id="armas">
+        <li class="carta">
+            <label id="lab-espingarda" for="espingarda">
+                <input type="checkbox" name="espingarda" id="espingarda" />
+                Espingarda
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-pa" for="pa">
+                <input type="checkbox" name="pa" id="pa" />
+                Pá
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-pe-de-cabra" for="pe-de-cabra">
+                <input type="checkbox" name="pe-de-cabra" id="pe-de-cabra" />
+                Pé-de-cabra
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-tesoura" for="tesoura">
+                <input type="checkbox" name="tesoura" id="tesoura" />
+                Tesoura
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-arma-quimica" for="arma-quimica">
+                <input type="checkbox" name="arma-quimica" id="arma-quimica" />
+                Arma química
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-veneno" for="veneno">
+                <input type="checkbox" name="veneno" id="veneno" />
+                Veneno
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-soco-ingles" for="soco-ingles">
+                <input type="checkbox" name="soco-ingles" id="soco-ingles" />
+                Soco inglês
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-faca" for="faca">
+                <input type="checkbox" name="faca" id="faca" />
+                Faca
+            </label>
+        </li>
+    </ul>
+
+    <h1>Lugares <span class="contador" id="cont-lugares">11 / 11</span></h1>
+    <ul id="lugares">
+        <li class="carta">
+            <label id="lab-prefeitura" for="prefeitura">
+                <input type="checkbox" name="prefeitura" id="prefeitura" />
+                Prefeitura
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-restaurante" for="restaurante">
+                <input type="checkbox" name="restaurante" id="restaurante" />
+                Restaurante
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-floricultura" for="floricultura">
+                <input type="checkbox" name="floricultura" id="floricultura" />
+                Floricultura
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-boate" for="boate">
+                <input type="checkbox" name="boate" id="boate" />
+                Boate
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-hospital" for="hospital">
+                <input type="checkbox" name="hospital" id="hospital" />
+                Hospital
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-mansao" for="mansao">
+                <input type="checkbox" name="mansao" id="mansao" />
+                Mansão
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-cemiterio" for="cemiterio">
+                <input type="checkbox" name="cemiterio" id="cemiterio" />
+                Cemitério
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-praca" for="praca">
+                <input type="checkbox" name="praca" id="praca" />
+                Praça
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-estacao-de-trem" for="hotel">
+                <input type="checkbox" name="hotel" id="hotel" />
+                Hotel
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-banco" for="banco">
+                <input type="checkbox" name="banco" id="banco" />
+                Banco
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-estacao-de-trem" for="estacao-de-trem">
+                <input type="checkbox" name="estacao-de-trem" id="estacao-de-trem" />
+                Estação de trem
+            </label>
+        </li>
+    </ul>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script src="../js/scripts.js"></script>
+
+</html>
