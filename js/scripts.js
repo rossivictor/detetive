@@ -1,5 +1,5 @@
 const registerCard = (name) => {
-    // console.log(name)
+    console.log(name)
 }
 
 const countCards = (x) => {
@@ -25,17 +25,32 @@ for (let i = 0; i <= 2; i++) {
 
     ulCategory.addEventListener("change", function(event) {
         const cardElem = event.target;
-        const cardId = cardElem.getAttribute('id');
-        const cardListElem = cardElem.closest('li');
         const isChecked = cardElem.checked;
+        const checkedItems = ulCategory.querySelectorAll('li.checked').length;
+        const totalItems = ulCategory.querySelectorAll('li').length;
+
+        // Verifica se está tentando marcar o último
+        if (isChecked && (checkedItems === totalItems - 1)) {
+            // Impede que o último desmarcado seja marcado.
+            event.preventDefault(); // Pode não funcionar para checkboxes, então usamos outra abordagem abaixo.
+            cardElem.checked = false; // Desmarca o checkbox.
+            return; // Encerra a execução adicional para esta mudança.
+        }
+
+        const cardListElem = cardElem.closest('li');
         const firstUncheckedItem = ulCategory.querySelector("li:not(.checked)");
+        const cardId = cardElem.getAttribute('id');
         
         if (isChecked) {
             cardListElem.classList.add("checked");
             ulCategory.appendChild(cardListElem);
         } else {
             cardListElem.classList.remove("checked");
-            ulCategory.insertBefore(cardListElem, firstUncheckedItem);
+            if (firstUncheckedItem) {
+                ulCategory.insertBefore(cardListElem, firstUncheckedItem);
+            } else {
+                ulCategory.appendChild(cardListElem); // Caso não haja nenhum desmarcado, apenas o adiciona ao final.
+            }
         }
 
         registerCard(cardId)
