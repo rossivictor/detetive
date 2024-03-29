@@ -63,7 +63,7 @@ ul {
     list-style-type: none;
 }
 
-li.carta {
+li.carta, li.versao {
     background-image: linear-gradient(45deg, #F2EFDF 50%, #798C8C);
     border-radius: 8px;
     box-shadow: 3px 3px 10px #00000039;
@@ -77,23 +77,35 @@ li.carta {
     text-transform: uppercase;
 }
 
-li.carta.mao {
-    border: 2px solid green;
+li.versao a {
+    color: #554909;
+    display: inline-block;
+    padding: 10px 20px;
+    width: 100%;
 }
 
-label {
+label, .label {
     cursor: pointer;
     margin: 0;
     padding: 10px 20px;
     width: 100%;
 }
 
-li.carta.checked {
+li.carta.checked, li.versao.checked {
     opacity: .4;
 }
 
 li.carta.checked label {
     text-decoration: line-through;
+}
+
+li.versao {
+    text-align: center;
+}
+
+li.versao img {
+    margin-bottom: 1.5rem;
+    width: 50%;
 }
 
 input[type="checkbox"] {

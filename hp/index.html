@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detetive Card</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+<body>
+    <div class="box" id="carta-mostrada"></div>
+
+    <h1>Suspeitos <span class="contador" id="cont-suspeitos">6 / 6</span></h1>
+    <ul id="suspeitos">
+        <li class="carta">
+            <label id="lab-crabbe-e-goyle" for="crabbe-e-goyle">
+                <input type="checkbox" name="crabbe-e-goyle" id="crabbe-e-goyle" />
+                Crabbe & Goyle
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-lucius-malfoy" for="lucius-malfoy">
+                <input type="checkbox" name="lucius-malfoy" id="lucius-malfoy" />
+                Lucius Malfoy
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-bellatrix-lestrange" for="bellatrix-lestrange">
+                <input type="checkbox" name="bellatrix-lestrange" id="bellatrix-lestrange" />
+                Bellatrix Lestrange
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-pedro-pettigrew" for="pedro-pettigrew">
+                <input type="checkbox" name="pedro-pettigrew" id="pedro-pettigrew" />
+                Pedro Pettigrew
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-draco-malfoy" for="draco-malfoy">
+                <input type="checkbox" name="draco-malfoy" id="draco-malfoy" />
+                Draco Malfoy
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-dolores-umbridge" for="dolores-umbridge">
+                <input type="checkbox" name="dolores-umbridge" id="dolores-umbridge" />
+                Dolores Umbridge
+            </label>
+        </li>
+    </ul>
+
+    <h1>Armas <span class="contador" id="cont-armas">6 / 6</span></h1>
+    <ul id="armas">
+        <li class="carta">
+            <label id="lab-expelliarmus" for="expelliarmus">
+                <input type="checkbox" name="expelliarmus" id="expelliarmus" />
+                Expelliarmus
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-rictusempra" for="rictusempra">
+                <input type="checkbox" name="rictusempra" id="rictusempra" />
+                Rictusempra
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-estupefaca" for="estupefaca">
+                <input type="checkbox" name="estupefaca" id="estupefaca" />
+                Estupefaça
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-petrificus-totalus" for="petrificus-totalus">
+                <input type="checkbox" name="petrificus-totalus" id="petrificus-totalus" />
+                Petrificus Totalus
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-pocao-do-sono" for="pocao-do-sono">
+                <input type="checkbox" name="pocao-do-sono" id="pocao-do-sono" />
+                Poção do sono
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-vassoura" for="vassoura">
+                <input type="checkbox" name="vassoura" id="vassoura" />
+                Vassoura
+            </label>
+        </li>
+    </ul>
+
+    <h1>Lugares <span class="contador" id="cont-aposentos">9 / 9</span></h1>
+    <ul id="aposentos">
+        <li class="carta">
+            <label id="lab-campo-de-quadribol" for="campo-de-quadribol">
+                <input type="checkbox" name="campo-de-quadribol" id="campo-de-quadribol" />
+                Campo de quadribol
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-sala-de-pocoes" for="sala-de-pocoes">
+                <input type="checkbox" name="sala-de-pocoes" id="sala-de-pocoes" />
+                Sala de poções
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-ala-hospitalar" for="ala-hospitalar">
+                <input type="checkbox" name="ala-hospitalar" id="ala-hospitalar" />
+                Ala hospitalar
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-floresta-proibida" for="floresta-proibida">
+                <input type="checkbox" name="floresta-proibida" id="floresta-proibida" />
+                Floresta proibida
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-sala-precisa" for="sala-precisa">
+                <input type="checkbox" name="sala-precisa" id="sala-precisa" />
+                Sala precisa
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-salao-principal" for="salao-principal">
+                <input type="checkbox" name="salao-principal" id="salao-principal" />
+                Salão principal
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-cabana-do-hagrid" for="cabana-do-hagrid">
+                <input type="checkbox" name="cabana-do-hagrid" id="cabana-do-hagrid" />
+                Cabana do Hagrid
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-biblioteca" for="biblioteca">
+                <input type="checkbox" name="biblioteca" id="biblioteca" />
+                Biblioteca
+            </label>
+        </li>
+
+        <li class="carta">
+            <label id="lab-sala-de-dcat" for="sala-de-dcat">
+                <input type="checkbox" name="sala-de-dcat" id="sala-de-dcat" />
+                Sala de defesa contra a arte das trevas
+            </label>
+        </li>
+    </ul>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script src="../js/scripts.js"></script>
+
+</html>
