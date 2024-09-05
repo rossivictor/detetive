@@ -1,0 +1,345 @@
+{
+    "classic": {
+        "metainfo": {
+            "name": "Clássico",
+            "slug": "classico",
+            "description": "Versão mais tradicional do jogo",
+            "examples": "Coronel Mostarda, chave inglesa, etc",
+            "photo": "../public/detetive-classico.jpg"
+        },
+        "suspects": [
+            {
+                "name": "Cel. Mostarda",
+                "slug": "cel-mostarda",
+                "color": "yellow"
+            },
+            {
+                "name": "Prof. Black",
+                "slug": "prof-black",
+                "color": "black"
+            },
+            {
+                "name": "Dona Violeta",
+                "slug": "dona-violeta",
+                "color": "light blue"
+            },
+            {
+                "name": "Sr. Marinho",
+                "slug": "sr-marinho",
+                "color": "dark blue"
+            },
+            {
+                "name": "Srta. Rosa",
+                "slug": "srta-rosa",
+                "color": "red"
+            },
+            {
+                "name": "Dona Branca",
+                "slug": "dona-branca",
+                "color": "white"
+            }
+        ],
+        "weapons": [
+            {
+                "name": "Faca",
+                "slug": "faca"
+            },
+            {
+                "name": "Castiçal",
+                "slug": "castical"
+            },
+            {
+                "name": "Revólver",
+                "slug": "revolver"
+            },
+            {
+                "name": "Corda",
+                "slug": "corda"
+            },
+            {
+                "name": "Cano",
+                "slug": "cano"
+            },
+            {
+                "name": "Chave inglesa",
+                "slug": "chave-inglesa"
+            }
+        ],
+        "rooms": [
+            {
+                "name": "Hall",
+                "slug": "hall"
+            },
+            {
+                "name": "Sala de estar",
+                "slug": "sala-de-estar"
+            },
+            {
+                "name": "Cozinha",
+                "slug": "cozinha"
+            },
+            {
+                "name": "Sala de jantar",
+                "slug": "sala-de-jantar"
+            },
+            {
+                "name": "Salão de festas",
+                "slug": "salao-de-festas"
+            },
+            {
+                "name": "Sala de música",
+                "slug": "sala-de-musica"
+            },
+            {
+                "name": "Salão de jogos",
+                "slug": "salao-de-jogos"
+            },
+            {
+                "name": "Biblioteca",
+                "slug": "biblioteca"
+            },
+            {
+                "name": "Escritório",
+                "slug": "escritorio"
+            }
+        ]
+    },
+    "modern": {
+        "metainfo": {
+            "name": "Moderno",
+            "slug": "moderno",
+            "description": "Versão mais moderna do jogo",
+            "examples": "Tony Gourmet, hotel, veneno, etc",
+            "photo": "../public/detetive-novo.jpg"
+        },
+        "suspects": [
+            {
+                "name": "Cel. Mostarda",
+                "slug": "cel-mostarda",
+                "occupation": "sargento",
+                "color": "yellow"
+            },
+            {
+                "name": "Dona Branca",
+                "slug": "dona-branca",
+                "occupation": "florista",
+                "color": "white"
+            },
+            {
+                "name": "Tony Gourmet",
+                "slug": "tony-gourmet",
+                "occupation": "chef de cozinha",
+                "color": "brown"
+            },
+            {
+                "name": "James",
+                "slug": "james",
+                "occupation": "mordomo",
+                "color": "blue"
+            },
+            {
+                "name": "Dona Violeta",
+                "slug": "dona-violeta",
+                "occupation": "médica",
+                "color": "pink"
+            },
+            {
+                "name": "Srta. Rosa",
+                "slug": "srta-rosa",
+                "occupation": "dançarina",
+                "color": "red"
+            },
+            {
+                "name": "Sérgio Soturno",
+                "slug": "sergio-soturno",
+                "occupation": "coveiro",
+                "color": "black"
+            },
+            {
+                "name": "Sr. Marinho",
+                "slug": "sr-marinho",
+                "occupation": "advogado",
+                "color": "green"
+            }
+        ],
+        "weapons": [
+            {
+                "name": "Espingarda",
+                "slug": "espingarda"
+            },
+            {
+                "name": "Pá",
+                "slug": "pa"
+            },
+            {
+                "name": "Pé de cabra",
+                "slug": "pe-de-cabra"
+            },
+            {
+                "name": "Tesoura",
+                "slug": "tesoura"
+            },
+            {
+                "name": "Arma química",
+                "slug": "arma-quimica"
+            },
+            {
+                "name": "Veneno",
+                "slug": "veneno"
+            },
+            {
+                "name": "Soco inglês",
+                "slug": "soco-ingles"
+            },
+            {
+                "name": "Faca",
+                "slug": "faca"
+            }
+        ],
+        "rooms": [
+            {
+                "name": "Prefeitura",
+                "slug": "prefeitura"
+            },
+            {
+                "name": "Restaurante",
+                "slug": "restaurante"
+            },
+            {
+                "name": "Floricultura",
+                "slug": "floricultura"
+            },
+            {
+                "name": "Boate",
+                "slug": "boate"
+            },
+            {
+                "name": "Hospital",
+                "slug": "hospital"
+            },
+            {
+                "name": "Mansão",
+                "slug": "mansao"
+            },
+            {
+                "name": "Cemitério",
+                "slug": "cemiterio"
+            },
+            {
+                "name": "Praça",
+                "slug": "praca"
+            },
+            {
+                "name": "Hotel",
+                "slug": "hotel"
+            },
+            {
+                "name": "Banco",
+                "slug": "banco"
+            },
+            {
+                "name": "Estação de trem",
+                "slug": "estacao-de-trem"
+            }
+        ]
+    },
+    "hogwarts": {
+        "metainfo": {
+            "name": "Hogwarts",
+            "slug": "hogwarts",
+            "description": "Versão temática de Harry Potter",
+            "examples": "Draco Malfoy, expelliarmus, etc",
+            "photo": "../public/detetive-h.jpg"
+        },
+        "suspects": [
+            {
+                "name": "Crabbe & Goyle",
+                "slug": "crabbe-goyle"
+            },
+            {
+                "name": "Lucius Malfoy",
+                "slug": "lucius-malfoy"
+            },
+            {
+                "name": "Bellatrix Lestrange",
+                "slug": "bellatrix-lestrange"
+            },
+            {
+                "name": "Pedro Pettigrew",
+                "slug": "pedro-pettigrew"
+            },
+            {
+                "name": "Draco Malfoy",
+                "slug": "draco-malfoy"
+            },
+            {
+                "name": "Dolores Umbridge",
+                "slug": "dolores-umbridge"
+            }
+        ],
+        "weapons": [
+            {
+                "name": "Expelliarmus",
+                "slug": "expelliarmus"
+            },
+            {
+                "name": "Rictusempra",
+                "slug": "rictusempra"
+            },
+            {
+                "name": "Estupefaça",
+                "slug": "estupefaca"
+            },
+            {
+                "name": "Petrificus Totalus",
+                "slug": "petrifucus-totalus"
+            },
+            {
+                "name": "Poção do sono",
+                "slug": "pocao-do-sono"
+            },
+            {
+                "name": "Vassoura",
+                "slug": "vassoura"
+            }
+        ],
+        "rooms": [
+            {
+                "name": "Campo de quadribol",
+                "slug": "campo-de-quadribol"
+            },
+            {
+                "name": "Sala de poções",
+                "slug": "sala-de-pocoes"
+            },
+            {
+                "name": "Ala hospitalar",
+                "slug": "ala-hospitalar"
+            },
+            {
+                "name": "Floresta proibida",
+                "slug": "floresta-proibida"
+            },
+            {
+                "name": "Sala precisa",
+                "slug": "sala-precisa"
+            },
+            {
+                "name": "Salão principal",
+                "slug": "salao-principal"
+            },
+            {
+                "name": "Cabana do Hagrid",
+                "slug": "cabana-do-hagrid"
+            },
+            {
+                "name": "Biblioteca",
+                "slug": "biblioteca"
+            },
+            {
+                "name": "Sala de defesa contra a arte das trevas",
+                "slug": "sala-de-dcat"
+            }
+        ]
+    }
+}

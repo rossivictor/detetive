@@ -18,6 +18,14 @@ body {
     padding: 20px;
 }
 
+@media screen and (min-width: 500px) {
+    body {
+        max-width: 500px;
+        margin: 0px auto;
+    }
+    
+}
+
 .box {
     background-color: #000000e9;
     color: #fff;
